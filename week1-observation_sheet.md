@@ -46,15 +46,3 @@ YouTube displays video titles, channel names and other information, but my home 
 | **5. What did the system do POORLY? Provide a specific example and evidence.** | As mentioned in A1(4), YouTube still displayed videos related to dangerous viral challenges and harmful TikTok trends. This raises concerns about the system’s safety, as users may still be exposed to potentially harmful content. The system may struggle to distinguish between content that warns against dangerous behaviour and content that promotes it. |
 | **6. Responsible AI risks identified (Kleppmann & Riccomini, 2026, Ch. 14)** | **Privacy and tracking:** YouTube uses search history, watch history and engagement patterns to personalize recommendations. |
 | **7. If you could fix ONE thing** | I would improve YouTube’s recommendations algorithm to better analyze and understand video content, distinguishing between harmful and educational content, and I would also encourage the system to recommend more videos from smaller creators. |
-
-## B4: Reflection
-
-Based on our conceptual system map, the **Data Processing/Input Pipeline** and the **Safety Checks** component had the most critical failure points.
-
-1. **Data Processing pipeline:** Had the risks of misinterpreting mixed viewing contents or treating a single “one-off” query as the user’s permanent interest, which may expand the recommendations for sensitive or unwanted topics, affecting reliability and robustness.
-2. **Safety checks layer:** Suffered from misclassification distinguishing between awareness/educational danger warning videos and content that actually promoted dangerous trends, resulting in safety risks.
-
-This reflects that AI engineering should also focus on the engineering system around the model rather than relying solely on the model’s capabilities. They can focus on:
-
-1. **Safety & Alignment Guardrails:** Deploying the input/output guardrails at the Application layer to filter the contents.
-2. **Multi-Dimensional Quality Trade-Offs:** Optimising feature pipelines to understand short-term search signals to balance safety, fairness and relevance so one-off queries don’t affect user feeds.
